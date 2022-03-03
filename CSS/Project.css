@@ -1,0 +1,437 @@
+/* Css Reset */
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Baloo+Bhaina+2&family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+* {
+  margin: 0; 
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* 🤍 NAVBAR 🤍 */
+
+/* NAVBAR LOGO */
+#logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 7px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* NAVBAR ITEMS */
+ul li {
+  list-style: none;
+}
+#navitems ul {
+  display: flex;
+}
+#navitems li a {
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+@media only screen and (max-width:1298px){
+  #navitems li a {
+    font-size: 1rem;
+    padding: 3px 19px;
+  }
+}
+@media only screen and (max-width:391px){
+  #navitems li a {
+    font-size: 0.86rem;
+    padding: 2px 8px;
+  }
+}
+@media only screen and (max-width:240px){
+  #navitems li a {
+    font-size: 0.73rem;
+    padding: 2px 8px;
+  }
+}
+li a:hover {
+  color: black;
+  background-color: white;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+/* NAVBAR BACKGROUND */
+#navbar::before {
+  content: "";
+  background-color: rgba(17, 17, 17,0.4);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 10;
+}
+/* HOME SECTION */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 200px;
+  height: 500px;
+  color: white;
+
+}
+@media only screen and (max-width:1298px){
+  #home{
+    height: 330px;
+    padding: 3px 20px;
+    
+} 
+}
+@media only screen and (max-width:240px){
+  #home{
+    height: 215px;
+    padding: 2px 10px;
+    
+} 
+}
+/* @media only screen and (max-width:426px){
+  #home{
+    height: 230px;
+    padding: 3px 20px;
+    
+} 
+} */
+#home::before {
+  content: "";
+  background: url(../Image/ss.jpg) no-repeat center center/cover;
+  /* background-size:cover; */
+  height: 550px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.89;
+  top:0px;
+  left:0px;
+}
+  @media only screen and (max-width:1298px){
+    #home::before{
+      height: 400px;
+  }
+  }
+  @media only screen and (max-width:240px){
+    #home::before{
+      height: 285px;
+  }
+  }
+
+/* #home h1 {
+  font-size: 3.4rem;
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+@media only screen and (max-width:1298px){
+  .h-primary{
+    font-size: 20px;
+}
+} */
+#home p {
+  font-size: 18px;
+  text-align: center;
+}
+@media only screen and (max-width:1298px){
+  #home p{
+    font-size: 15px;
+}
+}
+@media only screen and (max-width:391px){
+  #home p{
+    font-size: 14.5px;
+}
+}
+@media only screen and (max-width:240px){
+  #home p{
+    font-size: 11.5px;
+}
+}
+/* ORDER BUTTON */
+button {
+  margin: 15px;
+  padding: 5px 19px;
+  border: solid 2px white;
+  border-radius: 7px;
+  color: white;
+  background-color: rgba(44, 43, 43, 0.259);
+}
+@media only screen and (max-width:1298px){
+  button{
+    font-size: 10px;
+    padding: 5px 12px;
+  }
+}
+@media only screen and (max-width:240px){
+  button{
+    font-size: 9px;
+    padding: 4px 10px;
+  }
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.897);
+  color: black;
+  border: solid 2px black;
+  cursor: pointer;
+}
+
+/* SERVICE CONTAINER */
+
+#services {
+  display: flex;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#services .box {
+  border: 2px solid rgb(194, 4, 4);
+  margin-left: 13px;
+  border-radius: 9.9px;
+  background-color: rgb(235, 232, 232);
+  padding-bottom: 5px;
+  margin: 2px 15px;
+  /* box-shadow: 1px -1px 7px 0px  rgb(201, 200, 200); */
+}
+@media only screen and (max-width:1298px){
+#services .box {
+  padding: 14px;
+  /* margin: 2px 0px;  */
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right:10px;
+}
+}
+@media only screen and (max-width:1298px){
+  #services .box {
+    padding: 10px;
+    /* margin: 2px 0px;  */
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right:10px;
+  }
+  }
+#services img {
+  height: 130px;
+  width: 180px;
+  display: block;
+  margin: auto;
+}
+@media only screen and (max-width:240px){
+  #services img {
+    height: 100px;
+    width: 120px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.center {
+  text-align: center;
+}
+.box p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+@media only screen and (max-width:1298px){
+  .box p{
+    font-size:13px;
+  }
+}
+@media only screen and (max-width:240px){
+  .box p{
+    font-size:11px;
+  }
+}
+
+
+/* CLIENT SECTION */
+#clients {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (max-width:1298px){
+  #clients{
+    flex-wrap: wrap;
+  }
+}
+#client-section {
+  /* height: 340px;s */
+  position: relative;
+  padding-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#client-section::before {
+  content: "";
+  background: url("../Image/Foodbackgrounf.jpg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  padding-top: 10px;
+}
+#clients img {
+  height: 170px;
+  width: 155px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+@media only screen and (max-width:1298px){
+  #clients img{
+    height: 90px;
+    width: 80px;
+  }
+}
+@media only screen and (max-width:240px){
+  #clients img{
+    height: 60px;
+    width: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* #flipcart_logo{
+  padding-bottom: 20px;
+
+} */
+
+/* CONTACT SECTION */
+#contact{
+  margin-top: 50px;
+  position: relative;
+  /* border: 1px solid white; */
+  box-shadow:2px -1px 3px 0px rgb(186 185 185);
+}
+#contact::before{
+ content: '';
+ background: url("../Image/contact.jpg") no-repeat center center/cover;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.7;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+         width: 100%;
+         padding: 0.5rem;
+         font-size: 1.1rem;
+         border-radius: 6px;
+}
+@media only screen and (max-width:1298px) {
+  #contact-box input,
+  #contact-box textarea{
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width:240px) {
+  #contact-box input,
+  #contact-box textarea{
+    font-size: 0.8rem;
+  }
+}
+
+.form-group{
+  padding-bottom: 5px;
+}
+#contact-box form{
+  width: 40%
+}
+@media only screen and (max-width:1298px){
+  #contact-box form{
+    width: 75%;
+  }
+}
+@media only screen and (max-width:240px){
+  #contact-box form{
+    width: 65%;
+    padding-right: 19px;
+  }
+}
+
+#contact-box label{
+ font-size: 1.3rem;
+ font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+ "Lucida Sans", Arial, sans-serif;
+}
+@media only screen and (max-width:1298px) {
+  #contact-box label{
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width:240px) {
+  #contact-box label{
+    font-size: 1rem;
+  }
+}
+
+/* UTILITY CLASS */ 
+
+.h-primary {
+  font-size: 3.1rem;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+@media only screen and (max-width:1298px){
+  .h-primary{
+    font-size: 23px;
+}
+}
+@media only screen and (max-width:391px){
+  .h-primary{
+    font-size: 15px;
+}
+}
+@media only screen and (max-width:240px){
+  .h-primary{
+    font-size: 14px;
+}
+}
+
+.h-secondary {
+  font-size: 1.5rem;
+  padding: 12px;
+  font-family: "Josefin Sans", sans-serif;
+}
+@media only screen and (max-width:1298px){
+  .h-secondary{
+    font-size: 17px;
+}
+}
+@media only screen and (min-width:273px){
+  .h-secondary{
+    font-size: 17px;
+}
+}
+@media only screen and (min-width:240px){
+  .h-secondary{
+    font-size: 14px;
+}
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}
+@media only screen and (max-width:240px){
+  footer{
+    font-size: 13px;
+  }
+}

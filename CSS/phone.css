@@ -1,0 +1,40 @@
+/* Navigation */
+#navbar  {
+    flex-direction: column;
+}
+
+
+/* Home section */
+/* #home{
+    height: 180px;
+    padding: 3px 64px;
+    
+}  */
+/* #home::before{
+    height: 480px;
+} */
+/* #home p{
+    font-size: 10px;
+    
+} */
+
+/* Services section */
+#services{
+    flex-direction: column;
+}
+
+
+
+/* Client Section */
+
+
+/* Contact us Section */
+
+
+/* Footer */
+
+
+/* UTILITY CLASSES */
+/* .h-primary{
+    font-size: 20px;
+} */
